@@ -11,20 +11,19 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\GAD24\AppData\Local\Temp\xcAsjm4.\driver_tmp_12.o
+$C:\Users\GAD24\AppData\Local\Temp\xcAshc4.\driver_tmp_12.o
 reset_vec CODE 0 0 0 2 2 1
 end_init CODE 0 1B 1B 2 2 1
 config CONFIG 4 8007 8007 2 2 1
 $dist/default/production\TP1e_bonus1.X.production.o
 cinit CODE 0 1D 1D A 2 1
-text1 CODE 0 6F 6F C 2 1
-text2 CODE 0 51 51 1E 2 1
-idataCOMMON CODE 0 7B 7B 1 2 1
-maintext CODE 0 27 27 2A 2 1
-cstackCOMMON COMMON 1 70 70 5 1 1
+text1 CODE 0 5C 5C C 2 1
+idataCOMMON CODE 0 68 68 1 2 1
+maintext CODE 0 27 27 35 2 1
+cstackCOMMON COMMON 1 70 70 3 1 1
 intentry CODE 0 4 4 17 2 1
-dataCOMMON COMMON 1 77 77 1 1 1
-bssCOMMON COMMON 1 75 75 2 1 1
+dataCOMMON COMMON 1 75 75 1 1 1
+bssCOMMON COMMON 1 73 73 2 1 1
 config CONFIG 4 8007 8007 2 2 1
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
@@ -69,9 +68,9 @@ BANK7 3A0-3EF 1
 BANK8 420-46F 1
 BANK9 4A0-4EF 1
 CONST 2-3 2
-CONST 7C-3FFF 2
+CONST 69-3FFF 2
 ENTRY 2-3 2
-ENTRY 7C-3FFF 2
+ENTRY 69-3FFF 2
 IDLOC 8000-8003 2
 SFR10 500-51F 1
 SFR11 580-59F 1
@@ -96,7 +95,7 @@ SFR29 E80-EEF 1
 SFR30 F00-F6F 1
 SFR31 F80-FEF 1
 CODE 2-3 2
-CODE 7C-3FFF 2
+CODE 69-3FFF 2
 SFR0 0-1F 1
 SFR1 80-9F 1
 SFR2 100-11F 1
@@ -124,11 +123,11 @@ BANK23 BA0-BEF 1
 BANK24 C20-C6F 1
 BANK25 CA0-CBF 1
 BIGRAM 2000-27EF 1
-COMMON 78-7D 1
+COMMON 76-7D 1
 STRCODE 2-3 2
-STRCODE 7C-3FFF 2
+STRCODE 69-3FFF 2
 STRING 2-3 2
-STRING 7C-3FFF 2
+STRING 69-3FFF 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
 # The beginning of the section is indicated by %LINETAB.
@@ -143,54 +142,52 @@ STRING 7C-3FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\TP1e_bonus1.X.production.o
-1D cinit CODE >782:C:\Users\GAD24\AppData\Local\Temp\xcAsjm4.\driver_tmp_1.s
-1D cinit CODE >785:C:\Users\GAD24\AppData\Local\Temp\xcAsjm4.\driver_tmp_1.s
-1D cinit CODE >805:C:\Users\GAD24\AppData\Local\Temp\xcAsjm4.\driver_tmp_1.s
-20 cinit CODE >806:C:\Users\GAD24\AppData\Local\Temp\xcAsjm4.\driver_tmp_1.s
-21 cinit CODE >811:C:\Users\GAD24\AppData\Local\Temp\xcAsjm4.\driver_tmp_1.s
-22 cinit CODE >812:C:\Users\GAD24\AppData\Local\Temp\xcAsjm4.\driver_tmp_1.s
-23 cinit CODE >818:C:\Users\GAD24\AppData\Local\Temp\xcAsjm4.\driver_tmp_1.s
-23 cinit CODE >820:C:\Users\GAD24\AppData\Local\Temp\xcAsjm4.\driver_tmp_1.s
-24 cinit CODE >821:C:\Users\GAD24\AppData\Local\Temp\xcAsjm4.\driver_tmp_1.s
-25 cinit CODE >822:C:\Users\GAD24\AppData\Local\Temp\xcAsjm4.\driver_tmp_1.s
-4 intentry CODE >9:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
-6 intentry CODE >10:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
-B intentry CODE >11:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
-C intentry CODE >12:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
-E intentry CODE >13:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
-13 intentry CODE >14:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
-15 intentry CODE >16:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
-19 intentry CODE >18:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
-51 text2 CODE >30:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
-51 text2 CODE >31:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
-59 text2 CODE >32:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
-5A text2 CODE >33:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
-6E text2 CODE >34:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
-6F text1 CODE >20:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
-6F text1 CODE >21:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
-72 text1 CODE >22:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
-74 text1 CODE >23:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
-75 text1 CODE >24:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
-76 text1 CODE >25:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
-78 text1 CODE >26:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
-79 text1 CODE >27:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
-7A text1 CODE >28:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
-27 maintext CODE >36:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
-27 maintext CODE >38:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
-29 maintext CODE >39:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
-2A maintext CODE >40:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
-2C maintext CODE >42:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
-2E maintext CODE >43:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
-2F maintext CODE >45:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
-31 maintext CODE >47:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
-34 maintext CODE >51:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
-3A maintext CODE >52:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
-3D maintext CODE >53:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
-3F maintext CODE >57:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
-42 maintext CODE >58:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
-45 maintext CODE >59:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
-47 maintext CODE >60:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
-4C maintext CODE >61:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
+1D cinit CODE >779:C:\Users\GAD24\AppData\Local\Temp\xcAshc4.\driver_tmp_1.s
+1D cinit CODE >782:C:\Users\GAD24\AppData\Local\Temp\xcAshc4.\driver_tmp_1.s
+1D cinit CODE >802:C:\Users\GAD24\AppData\Local\Temp\xcAshc4.\driver_tmp_1.s
+20 cinit CODE >803:C:\Users\GAD24\AppData\Local\Temp\xcAshc4.\driver_tmp_1.s
+21 cinit CODE >808:C:\Users\GAD24\AppData\Local\Temp\xcAshc4.\driver_tmp_1.s
+22 cinit CODE >809:C:\Users\GAD24\AppData\Local\Temp\xcAshc4.\driver_tmp_1.s
+23 cinit CODE >815:C:\Users\GAD24\AppData\Local\Temp\xcAshc4.\driver_tmp_1.s
+23 cinit CODE >817:C:\Users\GAD24\AppData\Local\Temp\xcAshc4.\driver_tmp_1.s
+24 cinit CODE >818:C:\Users\GAD24\AppData\Local\Temp\xcAshc4.\driver_tmp_1.s
+25 cinit CODE >819:C:\Users\GAD24\AppData\Local\Temp\xcAshc4.\driver_tmp_1.s
+4 intentry CODE >7:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
+6 intentry CODE >8:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
+B intentry CODE >9:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
+C intentry CODE >10:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
+E intentry CODE >11:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
+13 intentry CODE >12:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
+15 intentry CODE >14:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
+19 intentry CODE >16:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
+5C text1 CODE >18:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
+5C text1 CODE >19:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
+5F text1 CODE >20:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
+61 text1 CODE >21:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
+62 text1 CODE >22:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
+63 text1 CODE >23:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
+65 text1 CODE >24:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
+66 text1 CODE >25:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
+67 text1 CODE >26:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
+27 maintext CODE >28:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
+27 maintext CODE >30:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
+29 maintext CODE >31:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
+2A maintext CODE >33:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
+2C maintext CODE >34:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
+2D maintext CODE >36:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
+2F maintext CODE >38:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
+32 maintext CODE >42:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
+38 maintext CODE >43:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
+3B maintext CODE >44:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
+3D maintext CODE >47:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
+40 maintext CODE >48:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
+42 maintext CODE >49:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
+43 maintext CODE >50:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
+4A maintext CODE >50:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
+4C maintext CODE >50:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
+50 maintext CODE >51:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
+52 maintext CODE >52:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
+57 maintext CODE >53:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -204,50 +201,49 @@ E intentry CODE >13:C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Cir
 # is the name of the object file in which the symbol was defined.
 %SYMTAB
 ___latbits 3 0 ABS 0 - dist/default/production\TP1e_bonus1.X.production.o
-__end_of_delai_approx DE 0 CODE 0 text2 dist/default/production\TP1e_bonus1.X.production.o
-__Hspace_0 7C 0 ABS 0 - -
-__Hspace_1 78 0 ABS 0 - -
+__Hspace_0 69 0 ABS 0 - -
+__Hspace_1 76 0 ABS 0 - -
 __Hspace_2 0 0 ABS 0 - -
 __Hspace_3 0 0 ABS 0 - -
 __Hspace_4 10010 0 ABS 0 - -
 __Heeprom_data 0 0 EEDATA 3 eeprom_data -
 __L__absolute__ 0 0 ABS 0 __absolute__ -
+main@i 70 0 COMMON 1 cstackCOMMON dist/default/production\TP1e_bonus1.X.production.o
 __Hstrings 0 0 ABS 0 strings -
 _LATB 10D 0 ABS 0 - dist/default/production\TP1e_bonus1.X.production.o
 _LATD 10F 0 ABS 0 - dist/default/production\TP1e_bonus1.X.production.o
 _PEIE 5E 0 ABS 0 - dist/default/production\TP1e_bonus1.X.production.o
 _TMR2 1A 0 ABS 0 - dist/default/production\TP1e_bonus1.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\GAD24\AppData\Local\Temp\xcAsjm4.\driver_tmp_12.o
+___sp 0 0 STACK 2 stack C:\Users\GAD24\AppData\Local\Temp\xcAshc4.\driver_tmp_12.o
 _main 4E 0 CODE 0 maintext dist/default/production\TP1e_bonus1.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\TP1e_bonus1.X.production.o
-___stack_hi 0 0 STACK 2 stack C:\Users\GAD24\AppData\Local\Temp\xcAsjm4.\driver_tmp_12.o
-___stack_lo 0 0 STACK 2 stack C:\Users\GAD24\AppData\Local\Temp\xcAsjm4.\driver_tmp_12.o
-start 36 0 CODE 0 init C:\Users\GAD24\AppData\Local\Temp\xcAsjm4.\driver_tmp_12.o
+___stack_hi 0 0 STACK 2 stack C:\Users\GAD24\AppData\Local\Temp\xcAshc4.\driver_tmp_12.o
+___stack_lo 0 0 STACK 2 stack C:\Users\GAD24\AppData\Local\Temp\xcAshc4.\driver_tmp_12.o
+start 36 0 CODE 0 init C:\Users\GAD24\AppData\Local\Temp\xcAshc4.\driver_tmp_12.o
 __HbssCOMMON 0 0 ABS 0 bssCOMMON -
 __Hpowerup 0 0 CODE 0 powerup -
 __HdataCOMMON 0 0 ABS 0 dataCOMMON -
-intlevel0 0 0 ENTRY 0 functab C:\Users\GAD24\AppData\Local\Temp\xcAsjm4.\driver_tmp_12.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\GAD24\AppData\Local\Temp\xcAsjm4.\driver_tmp_12.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\GAD24\AppData\Local\Temp\xcAsjm4.\driver_tmp_12.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\GAD24\AppData\Local\Temp\xcAsjm4.\driver_tmp_12.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\GAD24\AppData\Local\Temp\xcAsjm4.\driver_tmp_12.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\GAD24\AppData\Local\Temp\xcAsjm4.\driver_tmp_12.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\GAD24\AppData\Local\Temp\xcAshc4.\driver_tmp_12.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\GAD24\AppData\Local\Temp\xcAshc4.\driver_tmp_12.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\GAD24\AppData\Local\Temp\xcAshc4.\driver_tmp_12.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\GAD24\AppData\Local\Temp\xcAshc4.\driver_tmp_12.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\GAD24\AppData\Local\Temp\xcAshc4.\driver_tmp_12.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\GAD24\AppData\Local\Temp\xcAshc4.\driver_tmp_12.o
 __LbssCOMMON 0 0 ABS 0 bssCOMMON -
 wtemp0 7E 0 ABS 0 - dist/default/production\TP1e_bonus1.X.production.o
 __Hfunctab 0 0 ENTRY 0 functab -
-_timer2_flag 75 0 COMMON 1 bssCOMMON dist/default/production\TP1e_bonus1.X.production.o
+_timer2_flag 73 0 COMMON 1 bssCOMMON dist/default/production\TP1e_bonus1.X.production.o
 __Hclrtext 0 0 ABS 0 clrtext -
-__pidataCOMMON F6 0 CODE 0 idataCOMMON dist/default/production\TP1e_bonus1.X.production.o
-_ANSELB 18D 0 ABS 0 - dist/default/production\TP1e_bonus1.X.production.o
+__pidataCOMMON D0 0 CODE 0 idataCOMMON dist/default/production\TP1e_bonus1.X.production.o
 __LdataCOMMON 0 0 ABS 0 dataCOMMON -
 __Lmaintext 0 0 ABS 0 maintext -
-___stackhi 0 0 ABS 0 - C:\Users\GAD24\AppData\Local\Temp\xcAsjm4.\driver_tmp_12.o
-___stacklo 0 0 ABS 0 - C:\Users\GAD24\AppData\Local\Temp\xcAsjm4.\driver_tmp_12.o
+___stackhi 0 0 ABS 0 - C:\Users\GAD24\AppData\Local\Temp\xcAshc4.\driver_tmp_12.o
+___stacklo 0 0 ABS 0 - C:\Users\GAD24\AppData\Local\Temp\xcAshc4.\driver_tmp_12.o
 __LidataCOMMON 0 0 ABS 0 idataCOMMON -
 start_initialization 3A 0 CODE 0 cinit dist/default/production\TP1e_bonus1.X.production.o
 _TMR2IE 489 0 ABS 0 - dist/default/production\TP1e_bonus1.X.production.o
 _TMR2IF 89 0 ABS 0 - dist/default/production\TP1e_bonus1.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\GAD24\AppData\Local\Temp\xcAsjm4.\driver_tmp_12.o
+___int_sp 0 0 STACK 2 stack C:\Users\GAD24\AppData\Local\Temp\xcAshc4.\driver_tmp_12.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -308,7 +304,7 @@ __Hbigram 0 0 ABS 0 bigram -
 __Hmaintext 0 0 ABS 0 maintext -
 __Hcommon 0 0 ABS 0 common -
 __Hconfig 10012 0 CONFIG 4 config -
-_init_timer2 DE 0 CODE 0 text1 dist/default/production\TP1e_bonus1.X.production.o
+_init_timer2 B8 0 CODE 0 text1 dist/default/production\TP1e_bonus1.X.production.o
 __Lbank0 0 0 ABS 0 bank0 -
 __Lbank1 0 0 ABS 0 bank1 -
 __Lbank2 0 0 ABS 0 bank2 -
@@ -379,14 +375,14 @@ int$flags 7E 0 ABS 0 - dist/default/production\TP1e_bonus1.X.production.o
 __HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
 _GIE 5F 0 ABS 0 - dist/default/production\TP1e_bonus1.X.production.o
 _PR2 1B 0 ABS 0 - dist/default/production\TP1e_bonus1.X.production.o
-__S0 7C 0 ABS 0 - -
-__S1 78 0 ABS 0 - -
+__S0 69 0 ABS 0 - -
+__S1 76 0 ABS 0 - -
 _isr 8 0 CODE 0 intentry dist/default/production\TP1e_bonus1.X.production.o
 __HidataCOMMON 0 0 ABS 0 idataCOMMON -
-main@leds_manual 74 0 COMMON 1 cstackCOMMON dist/default/production\TP1e_bonus1.X.production.o
+main@leds_manual 72 0 COMMON 1 cstackCOMMON dist/default/production\TP1e_bonus1.X.production.o
 __end_of_isr 36 0 CODE 0 intentry dist/default/production\TP1e_bonus1.X.production.o
 __Lintentry 8 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec C:\Users\GAD24\AppData\Local\Temp\xcAsjm4.\driver_tmp_12.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\GAD24\AppData\Local\Temp\xcAshc4.\driver_tmp_12.o
 __Lbank10 0 0 ABS 0 bank10 -
 __Lbank11 0 0 ABS 0 bank11 -
 __Lbank12 0 0 ABS 0 bank12 -
@@ -413,36 +409,33 @@ __pmaintext 4E 0 CODE 0 maintext dist/default/production\TP1e_bonus1.X.productio
 __Lbigram 0 0 ABS 0 bigram -
 __Lcommon 0 0 ABS 0 common -
 __Lconfig 0 0 CONFIG 4 config -
-_leds_timer2 77 0 COMMON 1 dataCOMMON dist/default/production\TP1e_bonus1.X.production.o
+_leds_timer2 75 0 COMMON 1 dataCOMMON dist/default/production\TP1e_bonus1.X.production.o
 __Lspace_0 0 0 ABS 0 - -
 __Lspace_1 0 0 ABS 0 - -
 __Lspace_2 0 0 ABS 0 - -
 __Lspace_3 0 0 ABS 0 - -
 __Lspace_4 0 0 ABS 0 - -
-__pbssCOMMON 75 0 COMMON 1 bssCOMMON dist/default/production\TP1e_bonus1.X.production.o
+__pbssCOMMON 73 0 COMMON 1 bssCOMMON dist/default/production\TP1e_bonus1.X.production.o
 __Lend_init 36 0 CODE 0 end_init -
 __LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
 end_of_initialization 46 0 CODE 0 cinit dist/default/production\TP1e_bonus1.X.production.o
 __Hintentry 36 0 CODE 0 intentry -
 __Lstrings 0 0 ABS 0 strings -
 __Hreset_vec 4 0 CODE 0 reset_vec -
-__ptext1 DE 0 CODE 0 text1 dist/default/production\TP1e_bonus1.X.production.o
-__ptext2 A2 0 CODE 0 text2 dist/default/production\TP1e_bonus1.X.production.o
+__ptext1 B8 0 CODE 0 text1 dist/default/production\TP1e_bonus1.X.production.o
 __Lpowerup 0 0 CODE 0 powerup -
 __Leeprom_data 0 0 EEDATA 3 eeprom_data -
 __H__absolute__ 0 0 ABS 0 __absolute__ -
 __Lreset_vec 0 0 CODE 0 reset_vec -
-delai_approx@i 70 0 COMMON 1 cstackCOMMON dist/default/production\TP1e_bonus1.X.production.o
-___heap_hi 0 0 ABS 0 - C:\Users\GAD24\AppData\Local\Temp\xcAsjm4.\driver_tmp_12.o
-___heap_lo 0 0 ABS 0 - C:\Users\GAD24\AppData\Local\Temp\xcAsjm4.\driver_tmp_12.o
-__end_of_init_timer2 F6 0 CODE 0 text1 dist/default/production\TP1e_bonus1.X.production.o
+___heap_hi 0 0 ABS 0 - C:\Users\GAD24\AppData\Local\Temp\xcAshc4.\driver_tmp_12.o
+___heap_lo 0 0 ABS 0 - C:\Users\GAD24\AppData\Local\Temp\xcAshc4.\driver_tmp_12.o
+__end_of_init_timer2 D0 0 CODE 0 text1 dist/default/production\TP1e_bonus1.X.production.o
 __end_of__initialization 46 0 CODE 0 cinit dist/default/production\TP1e_bonus1.X.production.o
-_delai_approx A2 0 CODE 0 text2 dist/default/production\TP1e_bonus1.X.production.o
 __Lfunctab 0 0 ENTRY 0 functab -
 __Lclrtext 0 0 ABS 0 clrtext -
 __pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\TP1e_bonus1.X.production.o
 __Hend_init 3A 0 CODE 0 end_init -
-__end_of_main A2 0 CODE 0 maintext dist/default/production\TP1e_bonus1.X.production.o
+__end_of_main B8 0 CODE 0 maintext dist/default/production\TP1e_bonus1.X.production.o
 _T2CON 1C 0 ABS 0 - dist/default/production\TP1e_bonus1.X.production.o
 _TRISB 8D 0 ABS 0 - dist/default/production\TP1e_bonus1.X.production.o
 _TRISD 8F 0 ABS 0 - dist/default/production\TP1e_bonus1.X.production.o
@@ -450,9 +443,9 @@ __Hram 0 0 ABS 0 ram -
 __Lram 0 0 ABS 0 ram -
 __pintentry 8 0 CODE 0 intentry dist/default/production\TP1e_bonus1.X.production.o
 __initialization 3A 0 CODE 0 cinit dist/default/production\TP1e_bonus1.X.production.o
-__pdataCOMMON 77 0 COMMON 1 dataCOMMON dist/default/production\TP1e_bonus1.X.production.o
-___int_stack_hi 0 0 STACK 2 stack C:\Users\GAD24\AppData\Local\Temp\xcAsjm4.\driver_tmp_12.o
-___int_stack_lo 0 0 STACK 2 stack C:\Users\GAD24\AppData\Local\Temp\xcAsjm4.\driver_tmp_12.o
+__pdataCOMMON 75 0 COMMON 1 dataCOMMON dist/default/production\TP1e_bonus1.X.production.o
+___int_stack_hi 0 0 STACK 2 stack C:\Users\GAD24\AppData\Local\Temp\xcAshc4.\driver_tmp_12.o
+___int_stack_lo 0 0 STACK 2 stack C:\Users\GAD24\AppData\Local\Temp\xcAshc4.\driver_tmp_12.o
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
 # The beginning of the section is indicated by %SPLITSTAB.
@@ -478,8 +471,8 @@ ___int_stack_lo 0 0 STACK 2 stack C:\Users\GAD24\AppData\Local\Temp\xcAsjm4.\dri
 # and size are in units of delta. The file address is in units of bytes.
 # All other numeric quantities are in decimal.
 %SEGMENTS
-cstackCOMMON 1 70 70 8 1
-intentry 0 4 8 78 2
+cstackCOMMON 1 70 70 6 1
+intentry 0 4 8 65 2
 reset_vec 0 0 0 2 2
 # %NOTES Section
 # This section contains data of all the note-psects.  The beginning of the section

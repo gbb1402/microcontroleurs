@@ -9693,8 +9693,6 @@ extern __bank0 __bit __timeout;
 # 2 "main.c" 2
 
 
-
-
 volatile unsigned char leds_timer2 = 0x08;
 volatile int timer2_flag = 0;
 
@@ -9719,17 +9717,10 @@ void init_timer2(void) {
     GIE = 1;
 }
 
-void delai_approx(void) {
-    for (unsigned long i = 0; i < 50000; i++) {
-        __nop();
-    }
-}
-
 void main(void) {
 
     TRISD = 0x00;
     TRISB = 0x00;
-    ANSELB = 0x00;
 
     LATD = 0x00;
     LATB = 0x00;
@@ -9745,9 +9736,10 @@ void main(void) {
             timer2_flag = 0;
         }
 
-
         LATB = leds_manual;
-        delai_approx();
+        for (unsigned int i = 0; i < 20000; i++) {
+            __nop();
+        }
         leds_manual >>= 1;
         if (leds_manual == 0x00) {
             leds_manual = 0x80;

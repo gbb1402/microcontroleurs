@@ -6,10 +6,10 @@ Linker command line:
   --edf=C:\Program Files\Microchip\xc8\v3.00\pic\dat\20241204225717_en.msgs \
   -cn -h+dist/default/production\TP1c_timer2.X.production.sym \
   --cmf=dist/default/production\TP1c_timer2.X.production.cmf -z -Q16F1719 \
-  -oC:\Users\GAD24\AppData\Local\Temp\xcAs5fs.\driver_tmp_3.o \
+  -oC:\Users\GAD24\AppData\Local\Temp\xcAs3ng.\driver_tmp_3.o \
   --defsym=__MPLAB_BUILD=1 --fixupoverflow=error \
   -Mdist/default/production/TP1c_timer2.X.production.map \
-  --md=C:\Users\GAD24\AppData\Local\Temp\xcAs5fs.\driver_tmp_0.dat -E1 \
+  --md=C:\Users\GAD24\AppData\Local\Temp\xcAs3ng.\driver_tmp_0.dat -E1 \
   -ver=XC8 Compiler -ACODE=00h-07FFhx8 -ASTRCODE=00h-03FFFh \
   -ASTRING=00h-0FFhx64 -ACONST=00h-0FFhx64 -AENTRY=00h-0FFhx64 \
   -ACOMMON=070h-07Fh -ABANK0=020h-06Fh -ABANK1=0A0h-0EFh \
@@ -38,7 +38,7 @@ Linker command line:
   -AIDLOC=08000h-08003h -DIDLOC=2 -DCODE=2 -DSTRCODE=2 -DSTRING=2 -DCONST=2 \
   -DENTRY=2 -preset_vec=00h,intentry,sivt,init,end_init -ppowerup=CODE \
   -pcinit=CODE -pfunctab=ENTRY -k \
-  C:\Users\GAD24\AppData\Local\Temp\xcAs5fs.\driver_tmp_12.o \
+  C:\Users\GAD24\AppData\Local\Temp\xcAs3ng.\driver_tmp_12.o \
   dist/default/production\TP1c_timer2.X.production.o 
 
 Object code version is 3.11
@@ -48,26 +48,24 @@ Machine type is 16F1719
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\GAD24\AppData\Local\Temp\xcAs5fs.\driver_tmp_12.o
+C:\Users\GAD24\AppData\Local\Temp\xcAs3ng.\driver_tmp_12.o
                 end_init                              2        2        2        0       0
                 reset_vec                             0        0        2        0       0
                 config                             8007     8007        2        0       4
 dist/default/production\TP1c_timer2.X.production.o
                 cinit                               7FD      7FD        3      FFA       0
                 config                             8007     8007        2        0       4
-                text2                               797      797       1A      F2E       0
-                text1                               78F      78F        8      F1E       0
-                maintext                            7B1      7B1       4C      F62       0
-                cstackCOMMON                         70       70        9       70       1
+                text1                               77D      77D        C      EFA       0
+                maintext                            789      789       74      F12       0
+                cstackCOMMON                         70       70        A       70       1
 
 TOTAL           Name                               Link     Load   Length     Space
         CLASS   CODE           
                 end_init                              2        2        2         0
                 cinit                               7FD      7FD        3         0
                 reset_vec                             0        0        2         0
-                text2                               797      797       1A         0
-                text1                               78F      78F        8         0
-                maintext                            7B1      7B1       4C         0
+                text1                               77D      77D        C         0
+                maintext                            789      789       74         0
 
         CLASS   STRCODE        
 
@@ -78,7 +76,7 @@ TOTAL           Name                               Link     Load   Length     Sp
         CLASS   ENTRY          
 
         CLASS   COMMON         
-                cstackCOMMON                         70       70        9         1
+                cstackCOMMON                         70       70        A         1
 
         CLASS   BANK0          
 
@@ -231,10 +229,9 @@ TOTAL           Name                               Link     Load   Length     Sp
 SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class     Delta
 
                 reset_vec                      000000  000004  000004         0       0  CODE        2
-                cstackCOMMON                   000070  000009  000079        70       1  COMMON      1
-                text1                          00078F  000008  000797       F1E       0  CODE        2
-                text2                          000797  00001A  0007B1       F2E       0  CODE        2
-                maintext                       0007B1  00004C  0007FD       F62       0  CODE        2
+                cstackCOMMON                   000070  00000A  00007A        70       1  COMMON      1
+                text1                          00077D  00000C  000789       EFA       0  CODE        2
+                maintext                       000789  000074  0007FD       F12       0  CODE        2
                 cinit                          0007FD  000003  000800       FFA       0  CODE        2
 
 
@@ -268,12 +265,12 @@ UNUSED ADDRESS RANGES
         BANK8            00420-0046F              50           1
         BANK9            004A0-004EF              50           1
         BIGRAM           02000-027EF             7F0           1
-        CODE             00004-0078E             78B           2
+        CODE             00004-0077C             779           2
                          00800-03FFF             800
-        COMMON           00079-0007D               5           1
-        CONST            00004-0078E             100           2
+        COMMON           0007A-0007D               4           1
+        CONST            00004-0077C             100           2
                          00800-03FFF             100
-        ENTRY            00004-0078E             100           2
+        ENTRY            00004-0077C             100           2
                          00800-03FFF             100
         IDLOC            08000-08003               4           2
         RAM              00020-0006F              50           1
@@ -334,18 +331,18 @@ UNUSED ADDRESS RANGES
         SFR7             00380-0039F              20           1
         SFR8             00400-0041F              20           1
         SFR9             00480-0049F              20           1
-        STRCODE          00004-0078E             78B           2
+        STRCODE          00004-0077C             779           2
                          00800-03FFF            3800
-        STRING           00004-0078E             100           2
+        STRING           00004-0077C             100           2
                          00800-03FFF             100
 
                                   Symbol Table
 
-_ANSELB                  (abs)        0018D
 _LATB                    (abs)        0010D
 _LATD                    (abs)        0010F
+_PIR1bits                (abs)        00011
 _PR2                     (abs)        0001B
-_T2CON                   (abs)        0001C
+_T2CONbits               (abs)        0001C
 _TMR2                    (abs)        0001A
 _TMR2IF                  (abs)        00089
 _TRISB                   (abs)        0008D
@@ -435,7 +432,7 @@ __Hsfr8                  sfr8         00000
 __Hsfr9                  sfr9         00000
 __Hsivt                  sivt         00002
 __Hspace_0               (abs)        00800
-__Hspace_1               (abs)        00079
+__Hspace_1               (abs)        0007A
 __Hspace_2               (abs)        00000
 __Hspace_3               (abs)        00000
 __Hspace_4               (abs)        10010
@@ -535,7 +532,7 @@ __Lstack                 stack        00000
 __Lstrings               strings      00000
 __Ltext                  text         00000
 __S0                     (abs)        00800
-__S1                     (abs)        00079
+__S1                     (abs)        0007A
 ___heap_hi               (abs)        00000
 ___heap_lo               (abs)        00000
 ___int_sp                stack        00000
@@ -548,19 +545,15 @@ ___stack_lo              stack        00000
 ___stackhi               (abs)        00000
 ___stacklo               (abs)        00000
 __end_of__initialization cinit        007FD
-__end_of_delai_timer2    text2        007B1
-__end_of_init_timer2     text1        00797
+__end_of_init_timer2     text1        00789
 __end_of_main            maintext     007FD
 __initialization         cinit        007FD
 __pcstackCOMMON          cstackCOMMON 00070
-__pmaintext              maintext     007B1
-__ptext1                 text1        0078F
-__ptext2                 text2        00797
-_delai_timer2            text2        00797
-_init_timer2             text1        0078F
-_main                    maintext     007B1
+__pmaintext              maintext     00789
+__ptext1                 text1        0077D
+_init_timer2             text1        0077D
+_main                    maintext     00789
 btemp                    (abs)        0007E
-delai_timer2@i           cstackCOMMON 00071
 end_of_initialization    cinit        007FD
 intlevel0                functab      00000
 intlevel1                functab      00000
@@ -568,9 +561,11 @@ intlevel2                functab      00000
 intlevel3                functab      00000
 intlevel4                functab      00000
 intlevel5                functab      00000
-main@i                   cstackCOMMON 00074
-main@i_43                cstackCOMMON 00076
-main@leds                cstackCOMMON 00078
+main@i                   cstackCOMMON 00071
+main@i_100               cstackCOMMON 00077
+main@i_98                cstackCOMMON 00073
+main@i_99                cstackCOMMON 00075
+main@leds                cstackCOMMON 00079
 reset_vec                reset_vec    00000
 start                    init         00002
 start_initialization     cinit        007FD
@@ -586,9 +581,8 @@ shared
 shared estimated size: 1
 
 main.c
-		_main          		CODE           	07B1	0000	76
-		_init_timer2   		CODE           	078F	0000	8
-		_delai_timer2  		CODE           	0797	0000	26
+		_main          		CODE           	0789	0000	116
+		_init_timer2   		CODE           	077D	0000	12
 
-main.c estimated size: 110
+main.c estimated size: 128
 

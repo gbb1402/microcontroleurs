@@ -22,25 +22,22 @@ Version 4.0 HI-TECH Software Intermediate Code
 "17111
 [; ;C:/Users/GAD24/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.7.242/xc8\pic\include\proc/pic16f1719.h: 17111: extern volatile __bit GIE __attribute__((address(0x5F)));
 [v _GIE `Vb ~T0 @X0 0 e@95 ]
-"8 C:\Program Files\Microchip\xc8\v3.00\pic\include/builtins.h
-[v ___nop `(v ~T0 @X0 0 ef ]
-[p i ___nop ]
 [p mainexit ]
-"1396 C:/Users/GAD24/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.7.242/xc8\pic\include\proc/pic16f1719.h
+"1396
 [; ;C:/Users/GAD24/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.7.242/xc8\pic\include\proc/pic16f1719.h: 1396: extern volatile unsigned char TRISD __attribute__((address(0x08F)));
 [v _TRISD `Vuc ~T0 @X0 0 e@143 ]
 "1272
 [; ;C:/Users/GAD24/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.7.242/xc8\pic\include\proc/pic16f1719.h: 1272: extern volatile unsigned char TRISB __attribute__((address(0x08D)));
 [v _TRISB `Vuc ~T0 @X0 0 e@141 ]
-"3854
-[; ;C:/Users/GAD24/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.7.242/xc8\pic\include\proc/pic16f1719.h: 3854: extern volatile unsigned char ANSELB __attribute__((address(0x18D)));
-[v _ANSELB `Vuc ~T0 @X0 0 e@397 ]
 "2476
 [; ;C:/Users/GAD24/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.7.242/xc8\pic\include\proc/pic16f1719.h: 2476: extern volatile unsigned char LATD __attribute__((address(0x10F)));
 [v _LATD `Vuc ~T0 @X0 0 e@271 ]
 "2352
 [; ;C:/Users/GAD24/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.7.242/xc8\pic\include\proc/pic16f1719.h: 2352: extern volatile unsigned char LATB __attribute__((address(0x10D)));
 [v _LATB `Vuc ~T0 @X0 0 e@269 ]
+"8 C:\Program Files\Microchip\xc8\v3.00\pic\include/builtins.h
+[v ___nop `(v ~T0 @X0 0 ef ]
+[p i ___nop ]
 "54 C:/Users/GAD24/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.7.242/xc8\pic\include\proc/pic16f1719.h
 [; ;C:/Users/GAD24/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.7.242/xc8\pic\include\proc/pic16f1719.h: 54: __asm("INDF0 equ 00h");
 [; <" INDF0 equ 00h ;# ">
@@ -1005,191 +1002,175 @@ Version 4.0 HI-TECH Software Intermediate Code
 [p x LPBOR      =  OFF      ]
 "35
 [p x LVP          =  OFF      ]
-"6 main.c
-[; ;main.c: 6: volatile unsigned char leds_timer2 = 0x08;
+"4 main.c
+[; ;main.c: 4: volatile unsigned char leds_timer2 = 0x08;
 [v _leds_timer2 `Vuc ~T0 @X0 1 e ]
 [i _leds_timer2
 -> -> 8 `i `uc
 ]
-"7
-[; ;main.c: 7: volatile int timer2_flag = 0;
+"5
+[; ;main.c: 5: volatile int timer2_flag = 0;
 [v _timer2_flag `Vi ~T0 @X0 1 e ]
 [i _timer2_flag
 -> 0 `i
 ]
 [v $root$_isr `(v ~T0 @X0 0 e ]
-"9
-[; ;main.c: 9: void __attribute__((picinterrupt(("")))) isr(void) {
+"7
+[; ;main.c: 7: void __attribute__((picinterrupt(("")))) isr(void) {
 [v _isr `(v ~T1 @X0 1 ef ]
 {
 [e :U _isr ]
 [f ]
-"10
-[; ;main.c: 10:     if (TMR2IF) {
+"8
+[; ;main.c: 8:     if (TMR2IF) {
 [e $ ! _TMR2IF 785  ]
 {
-"11
-[; ;main.c: 11:         TMR2IF = 0;
+"9
+[; ;main.c: 9:         TMR2IF = 0;
 [e = _TMR2IF -> -> 0 `i `b ]
-"12
-[; ;main.c: 12:         leds_timer2 >>= 1;
+"10
+[; ;main.c: 10:         leds_timer2 >>= 1;
 [e =>> _leds_timer2 -> -> 1 `i `Vuc ]
-"13
-[; ;main.c: 13:         if (leds_timer2 == 0x00) {
+"11
+[; ;main.c: 11:         if (leds_timer2 == 0x00) {
 [e $ ! == -> _leds_timer2 `i -> 0 `i 786  ]
 {
-"14
-[; ;main.c: 14:             leds_timer2 = 0x08;
+"12
+[; ;main.c: 12:             leds_timer2 = 0x08;
 [e = _leds_timer2 -> -> 8 `i `uc ]
-"15
-[; ;main.c: 15:         }
+"13
+[; ;main.c: 13:         }
 }
 [e :U 786 ]
-"16
-[; ;main.c: 16:         timer2_flag = 1;
+"14
+[; ;main.c: 14:         timer2_flag = 1;
 [e = _timer2_flag -> 1 `i ]
-"17
-[; ;main.c: 17:     }
+"15
+[; ;main.c: 15:     }
 }
 [e :U 785 ]
-"18
-[; ;main.c: 18: }
+"16
+[; ;main.c: 16: }
 [e :UE 784 ]
 }
-"20
-[; ;main.c: 20: void init_timer2(void) {
+"18
+[; ;main.c: 18: void init_timer2(void) {
 [v _init_timer2 `(v ~T0 @X0 1 ef ]
 {
 [e :U _init_timer2 ]
 [f ]
-"21
-[; ;main.c: 21:     T2CON = 0x07;
+"19
+[; ;main.c: 19:     T2CON = 0x07;
 [e = _T2CON -> -> 7 `i `uc ]
-"22
-[; ;main.c: 22:     PR2 = 255;
+"20
+[; ;main.c: 20:     PR2 = 255;
 [e = _PR2 -> -> 255 `i `uc ]
-"23
-[; ;main.c: 23:     TMR2 = 0;
+"21
+[; ;main.c: 21:     TMR2 = 0;
 [e = _TMR2 -> -> 0 `i `uc ]
-"24
-[; ;main.c: 24:     TMR2IF = 0;
+"22
+[; ;main.c: 22:     TMR2IF = 0;
 [e = _TMR2IF -> -> 0 `i `b ]
-"25
-[; ;main.c: 25:     TMR2IE = 1;
+"23
+[; ;main.c: 23:     TMR2IE = 1;
 [e = _TMR2IE -> -> 1 `i `b ]
-"26
-[; ;main.c: 26:     PEIE = 1;
+"24
+[; ;main.c: 24:     PEIE = 1;
 [e = _PEIE -> -> 1 `i `b ]
-"27
-[; ;main.c: 27:     GIE = 1;
+"25
+[; ;main.c: 25:     GIE = 1;
 [e = _GIE -> -> 1 `i `b ]
-"28
-[; ;main.c: 28: }
+"26
+[; ;main.c: 26: }
 [e :UE 787 ]
 }
-"30
-[; ;main.c: 30: void delai_approx(void) {
-[v _delai_approx `(v ~T0 @X0 1 ef ]
-{
-[e :U _delai_approx ]
-[f ]
-"31
-[; ;main.c: 31:     for (unsigned long i = 0; i < 50000; i++) {
-{
-[v _i `ul ~T0 @X0 1 a ]
-[e = _i -> -> -> 0 `i `l `ul ]
-[e $ < _i -> -> 50000 `l `ul 789  ]
-[e $U 790  ]
-[e :U 789 ]
-{
-"32
-[; ;main.c: 32:         __nop();
-[e ( ___nop ..  ]
-"33
-[; ;main.c: 33:     }
-}
-[e ++ _i -> -> -> 1 `i `l `ul ]
-[e $ < _i -> -> 50000 `l `ul 789  ]
-[e :U 790 ]
-}
-"34
-[; ;main.c: 34: }
-[e :UE 788 ]
-}
 [v $root$_main `(v ~T0 @X0 0 e ]
-"36
-[; ;main.c: 36: void main(void) {
+"28
+[; ;main.c: 28: void main(void) {
 [v _main `(v ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-"38
-[; ;main.c: 38:     TRISD = 0x00;
+"30
+[; ;main.c: 30:     TRISD = 0x00;
 [e = _TRISD -> -> 0 `i `uc ]
-"39
-[; ;main.c: 39:     TRISB = 0x00;
+"31
+[; ;main.c: 31:     TRISB = 0x00;
 [e = _TRISB -> -> 0 `i `uc ]
-"40
-[; ;main.c: 40:     ANSELB = 0x00;
-[e = _ANSELB -> -> 0 `i `uc ]
-"42
-[; ;main.c: 42:     LATD = 0x00;
+"33
+[; ;main.c: 33:     LATD = 0x00;
 [e = _LATD -> -> 0 `i `uc ]
-"43
-[; ;main.c: 43:     LATB = 0x00;
+"34
+[; ;main.c: 34:     LATB = 0x00;
 [e = _LATB -> -> 0 `i `uc ]
-"45
-[; ;main.c: 45:     unsigned char leds_manual = 0x80;
+"36
+[; ;main.c: 36:     unsigned char leds_manual = 0x80;
 [v _leds_manual `uc ~T0 @X0 1 a ]
 [e = _leds_manual -> -> 128 `i `uc ]
-"47
-[; ;main.c: 47:     init_timer2();
+"38
+[; ;main.c: 38:     init_timer2();
 [e ( _init_timer2 ..  ]
-"49
-[; ;main.c: 49:     while (1) {
-[e :U 794 ]
+"40
+[; ;main.c: 40:     while (1) {
+[e :U 790 ]
 {
-"51
-[; ;main.c: 51:         if (timer2_flag) {
-[e $ ! != _timer2_flag -> 0 `i 796  ]
+"42
+[; ;main.c: 42:         if (timer2_flag) {
+[e $ ! != _timer2_flag -> 0 `i 792  ]
 {
-"52
-[; ;main.c: 52:             LATD = leds_timer2;
+"43
+[; ;main.c: 43:             LATD = leds_timer2;
 [e = _LATD _leds_timer2 ]
-"53
-[; ;main.c: 53:             timer2_flag = 0;
+"44
+[; ;main.c: 44:             timer2_flag = 0;
 [e = _timer2_flag -> 0 `i ]
+"45
+[; ;main.c: 45:         }
+}
+[e :U 792 ]
+"47
+[; ;main.c: 47:         LATB = leds_manual;
+[e = _LATB _leds_manual ]
+"48
+[; ;main.c: 48:         for (unsigned int i = 0; i < 20000; i++) {
+{
+[v _i `ui ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `ui ]
+[e $ < _i -> -> 20000 `i `ui 793  ]
+[e $U 794  ]
+[e :U 793 ]
+{
+"49
+[; ;main.c: 49:             __nop();
+[e ( ___nop ..  ]
+"50
+[; ;main.c: 50:         }
+}
+[e ++ _i -> -> 1 `i `ui ]
+[e $ < _i -> -> 20000 `i `ui 793  ]
+[e :U 794 ]
+}
+"51
+[; ;main.c: 51:         leds_manual >>= 1;
+[e =>> _leds_manual -> -> 1 `i `uc ]
+"52
+[; ;main.c: 52:         if (leds_manual == 0x00) {
+[e $ ! == -> _leds_manual `i -> 0 `i 796  ]
+{
+"53
+[; ;main.c: 53:             leds_manual = 0x80;
+[e = _leds_manual -> -> 128 `i `uc ]
 "54
 [; ;main.c: 54:         }
 }
 [e :U 796 ]
-"57
-[; ;main.c: 57:         LATB = leds_manual;
-[e = _LATB _leds_manual ]
-"58
-[; ;main.c: 58:         delai_approx();
-[e ( _delai_approx ..  ]
-"59
-[; ;main.c: 59:         leds_manual >>= 1;
-[e =>> _leds_manual -> -> 1 `i `uc ]
-"60
-[; ;main.c: 60:         if (leds_manual == 0x00) {
-[e $ ! == -> _leds_manual `i -> 0 `i 797  ]
-{
-"61
-[; ;main.c: 61:             leds_manual = 0x80;
-[e = _leds_manual -> -> 128 `i `uc ]
-"62
-[; ;main.c: 62:         }
+"55
+[; ;main.c: 55:     }
 }
-[e :U 797 ]
-"63
-[; ;main.c: 63:     }
-}
-[e :U 793 ]
-[e $U 794  ]
-[e :U 795 ]
-"64
-[; ;main.c: 64: }
-[e :UE 792 ]
+[e :U 789 ]
+[e $U 790  ]
+[e :U 791 ]
+"56
+[; ;main.c: 56: }
+[e :UE 788 ]
 }

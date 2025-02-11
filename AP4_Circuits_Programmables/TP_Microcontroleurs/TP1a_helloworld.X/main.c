@@ -8,7 +8,7 @@ void main(void) {
 
     LATD = 0x00; // D1-D4 éteintes
     LATB = 0x00; // D5-D8 éteintes
-
+    
     while (1) {
         /* Code a executer dans une boucle infinie */
         LATD = 0xFF; //D1-D4 allumées

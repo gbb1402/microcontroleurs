@@ -1,43 +1,14 @@
 #include "configbits.h" // Bits de configuration
 #include <xc.h>         // Definition des registres specifiques au uC
 
-volatile unsigned char leds_timer2 = 0x01;
-volatile unsigned char port_flag = 0;
-
-void __interrupt() isr(void) {
-    if (TMR2IF) {
-        TMR2IF = 0;
-
-        if (port_flag == 0) {
-            LATD = leds_timer2;
-            LATB = 0x00;
-            leds_timer2 <<= 1;
-            if (leds_timer2 == 0x10) {
-                leds_timer2 = 0x01;
-                port_flag = 1;
-            }
-        } else {
-            LATB = leds_timer2;
-            LATD = 0x00;
-            leds_timer2 <<= 1;
-            if (leds_timer2 == 0x10) {
-                leds_timer2 = 0x01;
-                port_flag = 0;
-            }
-        }
-    }
-}
-
 void init_timer2(void) {
-    T2CON = 0x07;
-    PR2 = 255;
-    TMR2 = 0;
-    TMR2IF = 0;
-    TMR2IE = 1;
-    PEIE = 1;
-    GIE = 1;
-
-    T2CONbits.T2OUTPS = 0b1111;
+    T2CONbits.T2OUTPS = 0b1111; // créer Timer2
+    T2CONbits.T2CKPS = 0b00; // prescaler
+    PR2 = 124; // Temps Timer2
+    TMR2 = 0; // Timer2 = 0
+    TMR2IF = 0; // flag stop
+    PIR1bits.TMR2IF = 0; // Efface le flag d'interruption
+    T2CONbits.TMR2ON = 1; // Active Timer2
 }
 
 void main(void) {
@@ -48,9 +19,35 @@ void main(void) {
     LATD = 0x00; // D1-D4 éteintes
     LATB = 0x00; // D5-D8 éteintes
 
-    init_timer2(); // Initialise Timer2
+    unsigned char leds = 0x01; // Led à allumer
+
+    init_timer2();
 
     while (1) {
         /* Code a executer dans une boucle infinie */
+        leds = 0x01; // éteint tous le monde
+        for (int i = 0; i < 4; i++) {
+            LATD = leds; // Allume la Led à allumer
+            LATB = 0x00; // éteint tous le monde
+            for (int i = 0; i < 125; i++) {
+                PIR1bits.TMR2IF = 0; // Efface le flag d'interruption
+                while (!PIR1bits.TMR2IF); // Attent 1ms
+            }
+            leds <<= 1; // Décale vers la Led à allumer d'un cran
+        }
+
+        leds = 0x01; // éteint tous le monde
+
+        for (int i = 0; i < 4; i++) {
+            LATD = 0x00; // éteint tous le monde
+            LATB = leds; // Allume la Led à allumer
+            for (int i = 0; i < 125; i++) {
+                PIR1bits.TMR2IF = 0; // Efface le flag d'interruption
+                while (!PIR1bits.TMR2IF); // Attent 1ms
+            }
+            leds <<= 1; // Décale vers la Led à allumer d'un cran
+        }
+
+        leds = 0x01; // éteint tous le monde
     }
 }

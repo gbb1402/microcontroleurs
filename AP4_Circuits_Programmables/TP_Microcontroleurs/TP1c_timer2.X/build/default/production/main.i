@@ -9693,29 +9693,20 @@ extern __bank0 __bit __timeout;
 # 2 "main.c" 2
 
 
-
-
 void init_timer2(void) {
-    T2CON = 0x07;
-    PR2 = 255;
+    T2CONbits.T2OUTPS = 0b1111;
+    T2CONbits.T2CKPS = 0b00;
+    PR2 = 124;
     TMR2 = 0;
     TMR2IF = 0;
-}
-
-void delai_timer2(void) {
-    for (int i = 0; i < 10; i++) {
-        TMR2IF = 0;
-        while (!TMR2IF) {
-
-        }
-    }
+    PIR1bits.TMR2IF = 0;
+    T2CONbits.TMR2ON = 1;
 }
 
 void main(void) {
 
     TRISD = 0x00;
     TRISB = 0x00;
-    ANSELB = 0x00;
 
     LATD = 0x00;
     LATB = 0x00;
@@ -9725,10 +9716,15 @@ void main(void) {
     init_timer2();
 
     while (1) {
+
+        leds = 0x01;
         for (int i = 0; i < 4; i++) {
             LATD = leds;
             LATB = 0x00;
-            delai_timer2();
+            for (int i = 0; i < 125; i++) {
+                PIR1bits.TMR2IF = 0;
+                while (!PIR1bits.TMR2IF);
+            }
             leds <<= 1;
         }
 
@@ -9737,7 +9733,10 @@ void main(void) {
         for (int i = 0; i < 4; i++) {
             LATD = 0x00;
             LATB = leds;
-            delai_timer2();
+            for (int i = 0; i < 125; i++) {
+                PIR1bits.TMR2IF = 0;
+                while (!PIR1bits.TMR2IF);
+            }
             leds <<= 1;
         }
 

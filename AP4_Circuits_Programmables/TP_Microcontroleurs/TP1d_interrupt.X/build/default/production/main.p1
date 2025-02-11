@@ -1,34 +1,5 @@
 Version 4.0 HI-TECH Software Intermediate Code
-[t ~ __interrupt . k ]
-[t T1 __interrupt ]
-"19427 C:/Users/GAD24/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.7.242/xc8\pic\include\proc/pic16f1719.h
-[; ;C:/Users/GAD24/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.7.242/xc8\pic\include\proc/pic16f1719.h: 19427: extern volatile __bit TMR2IF __attribute__((address(0x89)));
-[v _TMR2IF `Vb ~T0 @X0 0 e@137 ]
-"2476
-[; ;C:/Users/GAD24/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.7.242/xc8\pic\include\proc/pic16f1719.h: 2476: extern volatile unsigned char LATD __attribute__((address(0x10F)));
-[v _LATD `Vuc ~T0 @X0 0 e@271 ]
-"2352
-[; ;C:/Users/GAD24/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.7.242/xc8\pic\include\proc/pic16f1719.h: 2352: extern volatile unsigned char LATB __attribute__((address(0x10D)));
-[v _LATB `Vuc ~T0 @X0 0 e@269 ]
-"1139
-[; ;C:/Users/GAD24/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.7.242/xc8\pic\include\proc/pic16f1719.h: 1139: extern volatile unsigned char T2CON __attribute__((address(0x01C)));
-[v _T2CON `Vuc ~T0 @X0 0 e@28 ]
-"1119
-[; ;C:/Users/GAD24/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.7.242/xc8\pic\include\proc/pic16f1719.h: 1119: extern volatile unsigned char PR2 __attribute__((address(0x01B)));
-[v _PR2 `Vuc ~T0 @X0 0 e@27 ]
-"1099
-[; ;C:/Users/GAD24/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.7.242/xc8\pic\include\proc/pic16f1719.h: 1099: extern volatile unsigned char TMR2 __attribute__((address(0x01A)));
-[v _TMR2 `Vuc ~T0 @X0 0 e@26 ]
-"19424
-[; ;C:/Users/GAD24/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.7.242/xc8\pic\include\proc/pic16f1719.h: 19424: extern volatile __bit TMR2IE __attribute__((address(0x489)));
-[v _TMR2IE `Vb ~T0 @X0 0 e@1161 ]
-"18761
-[; ;C:/Users/GAD24/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.7.242/xc8\pic\include\proc/pic16f1719.h: 18761: extern volatile __bit PEIE __attribute__((address(0x5E)));
-[v _PEIE `Vb ~T0 @X0 0 e@94 ]
-"17111
-[; ;C:/Users/GAD24/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.7.242/xc8\pic\include\proc/pic16f1719.h: 17111: extern volatile __bit GIE __attribute__((address(0x5F)));
-[v _GIE `Vb ~T0 @X0 0 e@95 ]
-"1145
+"1145 C:/Users/GAD24/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.7.242/xc8\pic\include\proc/pic16f1719.h
 [; ;C:/Users/GAD24/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.7.242/xc8\pic\include\proc/pic16f1719.h: 1145:     struct {
 [s S66 :2 `uc 1 :1 `uc 1 :4 `uc 1 ]
 [n S66 . T2CKPS TMR2ON T2OUTPS ]
@@ -43,6 +14,26 @@ Version 4.0 HI-TECH Software Intermediate Code
 "1160
 [; ;C:/Users/GAD24/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.7.242/xc8\pic\include\proc/pic16f1719.h: 1160: extern volatile T2CONbits_t T2CONbits __attribute__((address(0x01C)));
 [v _T2CONbits `VS65 ~T0 @X0 0 e@28 ]
+"1119
+[; ;C:/Users/GAD24/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.7.242/xc8\pic\include\proc/pic16f1719.h: 1119: extern volatile unsigned char PR2 __attribute__((address(0x01B)));
+[v _PR2 `Vuc ~T0 @X0 0 e@27 ]
+"1099
+[; ;C:/Users/GAD24/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.7.242/xc8\pic\include\proc/pic16f1719.h: 1099: extern volatile unsigned char TMR2 __attribute__((address(0x01A)));
+[v _TMR2 `Vuc ~T0 @X0 0 e@26 ]
+"19427
+[; ;C:/Users/GAD24/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.7.242/xc8\pic\include\proc/pic16f1719.h: 19427: extern volatile __bit TMR2IF __attribute__((address(0x89)));
+[v _TMR2IF `Vb ~T0 @X0 0 e@137 ]
+"721
+[; ;C:/Users/GAD24/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.7.242/xc8\pic\include\proc/pic16f1719.h: 721:     struct {
+[s S44 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S44 . TMR1IF TMR2IF CCP1IF SSP1IF TXIF RCIF ADIF TMR1GIF ]
+"720
+[; ;C:/Users/GAD24/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.7.242/xc8\pic\include\proc/pic16f1719.h: 720: typedef union {
+[u S43 `S44 1 ]
+[n S43 . . ]
+"732
+[; ;C:/Users/GAD24/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.7.242/xc8\pic\include\proc/pic16f1719.h: 732: extern volatile PIR1bits_t PIR1bits __attribute__((address(0x011)));
+[v _PIR1bits `VS43 ~T0 @X0 0 e@17 ]
 [p mainexit ]
 "1396
 [; ;C:/Users/GAD24/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.7.242/xc8\pic\include\proc/pic16f1719.h: 1396: extern volatile unsigned char TRISD __attribute__((address(0x08F)));
@@ -50,6 +41,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 "1272
 [; ;C:/Users/GAD24/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.7.242/xc8\pic\include\proc/pic16f1719.h: 1272: extern volatile unsigned char TRISB __attribute__((address(0x08D)));
 [v _TRISB `Vuc ~T0 @X0 0 e@141 ]
+"2476
+[; ;C:/Users/GAD24/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.7.242/xc8\pic\include\proc/pic16f1719.h: 2476: extern volatile unsigned char LATD __attribute__((address(0x10F)));
+[v _LATD `Vuc ~T0 @X0 0 e@271 ]
+"2352
+[; ;C:/Users/GAD24/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.7.242/xc8\pic\include\proc/pic16f1719.h: 2352: extern volatile unsigned char LATB __attribute__((address(0x10D)));
+[v _LATB `Vuc ~T0 @X0 0 e@269 ]
 "54 C:/Users/GAD24/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.7.242/xc8\pic\include\proc/pic16f1719.h
 [; ;C:/Users/GAD24/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.7.242/xc8\pic\include\proc/pic16f1719.h: 54: __asm("INDF0 equ 00h");
 [; <" INDF0 equ 00h ;# ">
@@ -1015,166 +1012,184 @@ Version 4.0 HI-TECH Software Intermediate Code
 "35
 [p x LVP          =  OFF      ]
 "4 main.c
-[; ;main.c: 4: volatile unsigned char leds_timer2 = 0x01;
-[v _leds_timer2 `Vuc ~T0 @X0 1 e ]
-[i _leds_timer2
--> -> 1 `i `uc
-]
-"5
-[; ;main.c: 5: volatile unsigned char port_flag = 0;
-[v _port_flag `Vuc ~T0 @X0 1 e ]
-[i _port_flag
--> -> 0 `i `uc
-]
-[v $root$_isr `(v ~T0 @X0 0 e ]
-"7
-[; ;main.c: 7: void __attribute__((picinterrupt(("")))) isr(void) {
-[v _isr `(v ~T1 @X0 1 ef ]
-{
-[e :U _isr ]
-[f ]
-"8
-[; ;main.c: 8:     if (TMR2IF) {
-[e $ ! _TMR2IF 785  ]
-{
-"9
-[; ;main.c: 9:         TMR2IF = 0;
-[e = _TMR2IF -> -> 0 `i `b ]
-"11
-[; ;main.c: 11:         if (port_flag == 0) {
-[e $ ! == -> _port_flag `i -> 0 `i 786  ]
-{
-"12
-[; ;main.c: 12:             LATD = leds_timer2;
-[e = _LATD _leds_timer2 ]
-"13
-[; ;main.c: 13:             LATB = 0x00;
-[e = _LATB -> -> 0 `i `uc ]
-"14
-[; ;main.c: 14:             leds_timer2 <<= 1;
-[e =<< _leds_timer2 -> -> 1 `i `Vuc ]
-"15
-[; ;main.c: 15:             if (leds_timer2 == 0x10) {
-[e $ ! == -> _leds_timer2 `i -> 16 `i 787  ]
-{
-"16
-[; ;main.c: 16:                 leds_timer2 = 0x01;
-[e = _leds_timer2 -> -> 1 `i `uc ]
-"17
-[; ;main.c: 17:                 port_flag = 1;
-[e = _port_flag -> -> 1 `i `uc ]
-"18
-[; ;main.c: 18:             }
-}
-[e :U 787 ]
-"19
-[; ;main.c: 19:         } else {
-}
-[e $U 788  ]
-[e :U 786 ]
-{
-"20
-[; ;main.c: 20:             LATB = leds_timer2;
-[e = _LATB _leds_timer2 ]
-"21
-[; ;main.c: 21:             LATD = 0x00;
-[e = _LATD -> -> 0 `i `uc ]
-"22
-[; ;main.c: 22:             leds_timer2 <<= 1;
-[e =<< _leds_timer2 -> -> 1 `i `Vuc ]
-"23
-[; ;main.c: 23:             if (leds_timer2 == 0x10) {
-[e $ ! == -> _leds_timer2 `i -> 16 `i 789  ]
-{
-"24
-[; ;main.c: 24:                 leds_timer2 = 0x01;
-[e = _leds_timer2 -> -> 1 `i `uc ]
-"25
-[; ;main.c: 25:                 port_flag = 0;
-[e = _port_flag -> -> 0 `i `uc ]
-"26
-[; ;main.c: 26:             }
-}
-[e :U 789 ]
-"27
-[; ;main.c: 27:         }
-}
-[e :U 788 ]
-"28
-[; ;main.c: 28:     }
-}
-[e :U 785 ]
-"29
-[; ;main.c: 29: }
-[e :UE 784 ]
-}
-"31
-[; ;main.c: 31: void init_timer2(void) {
+[; ;main.c: 4: void init_timer2(void) {
 [v _init_timer2 `(v ~T0 @X0 1 ef ]
 {
 [e :U _init_timer2 ]
 [f ]
-"32
-[; ;main.c: 32:     T2CON = 0x07;
-[e = _T2CON -> -> 7 `i `uc ]
-"33
-[; ;main.c: 33:     PR2 = 255;
-[e = _PR2 -> -> 255 `i `uc ]
-"34
-[; ;main.c: 34:     TMR2 = 0;
-[e = _TMR2 -> -> 0 `i `uc ]
-"35
-[; ;main.c: 35:     TMR2IF = 0;
-[e = _TMR2IF -> -> 0 `i `b ]
-"36
-[; ;main.c: 36:     TMR2IE = 1;
-[e = _TMR2IE -> -> 1 `i `b ]
-"37
-[; ;main.c: 37:     PEIE = 1;
-[e = _PEIE -> -> 1 `i `b ]
-"38
-[; ;main.c: 38:     GIE = 1;
-[e = _GIE -> -> 1 `i `b ]
-"40
-[; ;main.c: 40:     T2CONbits.T2OUTPS = 0b1111;
+"5
+[; ;main.c: 5:     T2CONbits.T2OUTPS = 0b1111;
 [e = . . _T2CONbits 0 2 -> -> 15 `i `uc ]
-"41
-[; ;main.c: 41: }
-[e :UE 790 ]
+"6
+[; ;main.c: 6:     T2CONbits.T2CKPS = 0b00;
+[e = . . _T2CONbits 0 0 -> -> 0 `i `uc ]
+"7
+[; ;main.c: 7:     PR2 = 124;
+[e = _PR2 -> -> 124 `i `uc ]
+"8
+[; ;main.c: 8:     TMR2 = 0;
+[e = _TMR2 -> -> 0 `i `uc ]
+"9
+[; ;main.c: 9:     TMR2IF = 0;
+[e = _TMR2IF -> -> 0 `i `b ]
+"10
+[; ;main.c: 10:     PIR1bits.TMR2IF = 0;
+[e = . . _PIR1bits 0 1 -> -> 0 `i `uc ]
+"11
+[; ;main.c: 11:     T2CONbits.TMR2ON = 1;
+[e = . . _T2CONbits 0 1 -> -> 1 `i `uc ]
+"12
+[; ;main.c: 12: }
+[e :UE 784 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
-"43
-[; ;main.c: 43: void main(void) {
+"14
+[; ;main.c: 14: void main(void) {
 [v _main `(v ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-"45
-[; ;main.c: 45:     TRISD = 0x00;
+"16
+[; ;main.c: 16:     TRISD = 0x00;
 [e = _TRISD -> -> 0 `i `uc ]
-"46
-[; ;main.c: 46:     TRISB = 0x00;
+"17
+[; ;main.c: 17:     TRISB = 0x00;
 [e = _TRISB -> -> 0 `i `uc ]
-"48
-[; ;main.c: 48:     LATD = 0x00;
+"19
+[; ;main.c: 19:     LATD = 0x00;
 [e = _LATD -> -> 0 `i `uc ]
-"49
-[; ;main.c: 49:     LATB = 0x00;
+"20
+[; ;main.c: 20:     LATB = 0x00;
 [e = _LATB -> -> 0 `i `uc ]
-"51
-[; ;main.c: 51:     init_timer2();
+"22
+[; ;main.c: 22:     unsigned char leds = 0x01;
+[v _leds `uc ~T0 @X0 1 a ]
+[e = _leds -> -> 1 `i `uc ]
+"24
+[; ;main.c: 24:     init_timer2();
 [e ( _init_timer2 ..  ]
-"53
-[; ;main.c: 53:     while (1) {
-[e :U 793 ]
+"26
+[; ;main.c: 26:     while (1) {
+[e :U 787 ]
 {
-"55
-[; ;main.c: 55:     }
-}
-[e :U 792 ]
+"28
+[; ;main.c: 28:         leds = 0x01;
+[e = _leds -> -> 1 `i `uc ]
+"29
+[; ;main.c: 29:         for (int i = 0; i < 4; i++) {
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $ < _i -> 4 `i 789  ]
+[e $U 790  ]
+[e :U 789 ]
+{
+"30
+[; ;main.c: 30:             LATD = leds;
+[e = _LATD _leds ]
+"31
+[; ;main.c: 31:             LATB = 0x00;
+[e = _LATB -> -> 0 `i `uc ]
+"32
+[; ;main.c: 32:             for (int i = 0; i < 125; i++) {
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $ < _i -> 125 `i 792  ]
 [e $U 793  ]
-[e :U 794 ]
-"56
-[; ;main.c: 56: }
-[e :UE 791 ]
+[e :U 792 ]
+{
+"33
+[; ;main.c: 33:                 PIR1bits.TMR2IF = 0;
+[e = . . _PIR1bits 0 1 -> -> 0 `i `uc ]
+"34
+[; ;main.c: 34:                 while (!PIR1bits.TMR2IF);
+[e $U 795  ]
+[e :U 796 ]
+[e :U 795 ]
+[e $ ! != -> . . _PIR1bits 0 1 `i -> 0 `i 796  ]
+[e :U 797 ]
+"35
+[; ;main.c: 35:             }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 125 `i 792  ]
+[e :U 793 ]
+}
+"36
+[; ;main.c: 36:             leds <<= 1;
+[e =<< _leds -> -> 1 `i `uc ]
+"37
+[; ;main.c: 37:         }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 4 `i 789  ]
+[e :U 790 ]
+}
+"39
+[; ;main.c: 39:         leds = 0x01;
+[e = _leds -> -> 1 `i `uc ]
+"41
+[; ;main.c: 41:         for (int i = 0; i < 4; i++) {
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $ < _i -> 4 `i 798  ]
+[e $U 799  ]
+[e :U 798 ]
+{
+"42
+[; ;main.c: 42:             LATD = 0x00;
+[e = _LATD -> -> 0 `i `uc ]
+"43
+[; ;main.c: 43:             LATB = leds;
+[e = _LATB _leds ]
+"44
+[; ;main.c: 44:             for (int i = 0; i < 125; i++) {
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $ < _i -> 125 `i 801  ]
+[e $U 802  ]
+[e :U 801 ]
+{
+"45
+[; ;main.c: 45:                 PIR1bits.TMR2IF = 0;
+[e = . . _PIR1bits 0 1 -> -> 0 `i `uc ]
+"46
+[; ;main.c: 46:                 while (!PIR1bits.TMR2IF);
+[e $U 804  ]
+[e :U 805 ]
+[e :U 804 ]
+[e $ ! != -> . . _PIR1bits 0 1 `i -> 0 `i 805  ]
+[e :U 806 ]
+"47
+[; ;main.c: 47:             }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 125 `i 801  ]
+[e :U 802 ]
+}
+"48
+[; ;main.c: 48:             leds <<= 1;
+[e =<< _leds -> -> 1 `i `uc ]
+"49
+[; ;main.c: 49:         }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 4 `i 798  ]
+[e :U 799 ]
+}
+"51
+[; ;main.c: 51:         leds = 0x01;
+[e = _leds -> -> 1 `i `uc ]
+"52
+[; ;main.c: 52:     }
+}
+[e :U 786 ]
+[e $U 787  ]
+[e :U 788 ]
+"53
+[; ;main.c: 53: }
+[e :UE 785 ]
 }

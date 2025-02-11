@@ -7,13 +7,11 @@
 [v ___fladd __fladd `(d  1 e 4 0 ]
 "4 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\Umul8_16.c
 [v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
-"9 C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
+"7 C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
 [v _isr isr `II(v  1 e 1 0 ]
-"20
+"18
 [v _init_timer2 init_timer2 `(v  1 e 1 0 ]
-"30
-[v _delai_approx delai_approx `(v  1 e 1 0 ]
-"36
+"28
 [v _main main `(v  1 e 1 0 ]
 "1099 C:/Users/GAD24/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.7.242/xc8\pic\include\proc/pic16f1719.h
 [v _TMR2 TMR2 `VEuc  1 e 1 @26 ]
@@ -29,8 +27,6 @@
 [v _LATB LATB `VEuc  1 e 1 @269 ]
 "2476
 [v _LATD LATD `VEuc  1 e 1 @271 ]
-"3854
-[v _ANSELB ANSELB `VEuc  1 e 1 @397 ]
 "17111
 [v _GIE GIE `VEb  1 e 0 @95 ]
 "18761
@@ -39,31 +35,26 @@
 [v _TMR2IE TMR2IE `VEb  1 e 0 @1161 ]
 "19427
 [v _TMR2IF TMR2IF `VEb  1 e 0 @137 ]
-"6 C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
+"4 C:\Users\GAD24\Documents\!Junia\AP4\microcontroleurs\AP4_Circuits_Programmables\microcontroleurs\AP4_Circuits_Programmables\TP_Microcontroleurs\TP1e_bonus1.X\main.c
 [v _leds_timer2 leds_timer2 `VEuc  1 e 1 0 ]
-"7
+"5
 [v _timer2_flag timer2_flag `VEi  1 e 2 0 ]
-"36
+"28
 [v _main main `(v  1 e 1 0 ]
 {
-"45
-[v main@leds_manual leds_manual `uc  1 a 1 4 ]
-"64
+"48
+[v main@i i `ui  1 a 2 0 ]
+"36
+[v main@leds_manual leds_manual `uc  1 a 1 2 ]
+"56
 } 0
-"20
+"18
 [v _init_timer2 init_timer2 `(v  1 e 1 0 ]
 {
-"28
+"26
 } 0
-"30
-[v _delai_approx delai_approx `(v  1 e 1 0 ]
-{
-"31
-[v delai_approx@i i `ul  1 a 4 0 ]
-"34
-} 0
-"9
+"7
 [v _isr isr `II(v  1 e 1 0 ]
 {
-"18
+"16
 } 0

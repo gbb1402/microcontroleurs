@@ -2,14 +2,13 @@
 #include <xc.h>         // Definition des registres specifiques au uC
 
 void init_timer2(void) {
-    T2CON = 0x07; // créer Timer2
-    PR2 = 255; // Temps Timer2
+    T2CONbits.T2OUTPS = 0b1111; // créer Timer2
+    T2CONbits.T2CKPS = 0b00; // prescaler
+    PR2 = 124; // Temps Timer2
     TMR2 = 0; // Timer2 = 0
     TMR2IF = 0; // flag stop
-}
-
-void delai_timer2(void) {
-
+    PIR1bits.TMR2IF = 0; // Efface le flag d'interruption
+    T2CONbits.TMR2ON = 1; // Active Timer2
 }
 
 void main(void) {
@@ -26,14 +25,13 @@ void main(void) {
 
     while (1) {
         /* Code a executer dans une boucle infinie */
+        leds = 0x01; // éteint tous le monde
         for (int i = 0; i < 4; i++) {
             LATD = leds; // Allume la Led à allumer
             LATB = 0x00; // éteint tous le monde
-            for (int i = 0; i < 10; i++) {
-                TMR2IF = 0;
-                while (!TMR2IF) {
-                    //boucle infini
-                }
+            for (int i = 0; i < 125; i++) {
+                PIR1bits.TMR2IF = 0; // Efface le flag d'interruption
+                while (!PIR1bits.TMR2IF); // Attent 1ms
             }
             leds <<= 1; // Décale vers la Led à allumer d'un cran
         }
@@ -43,11 +41,9 @@ void main(void) {
         for (int i = 0; i < 4; i++) {
             LATD = 0x00; // éteint tous le monde
             LATB = leds; // Allume la Led à allumer
-            for (int i = 0; i < 10; i++) {
-                TMR2IF = 0;
-                while (!TMR2IF) {
-                    //boucle infini
-                }
+            for (int i = 0; i < 125; i++) {
+                PIR1bits.TMR2IF = 0; // Efface le flag d'interruption
+                while (!PIR1bits.TMR2IF); // Attent 1ms
             }
             leds <<= 1; // Décale vers la Led à allumer d'un cran
         }

@@ -9693,43 +9693,14 @@ extern __bank0 __bit __timeout;
 # 2 "main.c" 2
 
 
-volatile unsigned char leds_timer2 = 0x01;
-volatile unsigned char port_flag = 0;
-
-void __attribute__((picinterrupt(("")))) isr(void) {
-    if (TMR2IF) {
-        TMR2IF = 0;
-
-        if (port_flag == 0) {
-            LATD = leds_timer2;
-            LATB = 0x00;
-            leds_timer2 <<= 1;
-            if (leds_timer2 == 0x10) {
-                leds_timer2 = 0x01;
-                port_flag = 1;
-            }
-        } else {
-            LATB = leds_timer2;
-            LATD = 0x00;
-            leds_timer2 <<= 1;
-            if (leds_timer2 == 0x10) {
-                leds_timer2 = 0x01;
-                port_flag = 0;
-            }
-        }
-    }
-}
-
 void init_timer2(void) {
-    T2CON = 0x07;
-    PR2 = 255;
+    T2CONbits.T2OUTPS = 0b1111;
+    T2CONbits.T2CKPS = 0b00;
+    PR2 = 124;
     TMR2 = 0;
     TMR2IF = 0;
-    TMR2IE = 1;
-    PEIE = 1;
-    GIE = 1;
-
-    T2CONbits.T2OUTPS = 0b1111;
+    PIR1bits.TMR2IF = 0;
+    T2CONbits.TMR2ON = 1;
 }
 
 void main(void) {
@@ -9740,9 +9711,35 @@ void main(void) {
     LATD = 0x00;
     LATB = 0x00;
 
+    unsigned char leds = 0x01;
+
     init_timer2();
 
     while (1) {
 
+        leds = 0x01;
+        for (int i = 0; i < 4; i++) {
+            LATD = leds;
+            LATB = 0x00;
+            for (int i = 0; i < 125; i++) {
+                PIR1bits.TMR2IF = 0;
+                while (!PIR1bits.TMR2IF);
+            }
+            leds <<= 1;
+        }
+
+        leds = 0x01;
+
+        for (int i = 0; i < 4; i++) {
+            LATD = 0x00;
+            LATB = leds;
+            for (int i = 0; i < 125; i++) {
+                PIR1bits.TMR2IF = 0;
+                while (!PIR1bits.TMR2IF);
+            }
+            leds <<= 1;
+        }
+
+        leds = 0x01;
     }
 }
